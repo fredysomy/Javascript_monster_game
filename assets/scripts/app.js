@@ -1,9 +1,12 @@
 let mali=prompt("Max life of you and monster",'100');
 let maxLife=parseInt(mali);
-if(isNaN(maxLife) && maxLife<=0){
+if(isNaN(maxLife) && maxLife<=0)
+{
     maxLife=100;
-}else{}
+}
+else{
 
+}
 const attackValue=10;
 attackValueStrong=20;
 var currentMonsterhealth=maxLife;
@@ -11,10 +14,7 @@ var curentUserHealth=maxLife;
 var healvalue=14;
 adjustHealthBars(maxLife);
 let bonuslife=true 
-
-
 function healit() {
-   
     var x=dealPlayerDamage(attackValue);
     curentUserHealth -=x;
     if (curentUserHealth+healvalue>=maxLife) {
@@ -25,7 +25,6 @@ function healit() {
         increasePlayerHealth(healvalue);
         healBtn.disabled=true;
     }
-
 }
 function Moode(type) {
     if(type=="strong"){
@@ -59,13 +58,9 @@ function onstrongattack(){
     Moode("strong");
 }
 function bonu() {
-    
-    
     if (curentUserHealth<=10 && bonuslife == true ){
         increasePlayerHealth(20);
         removeBonusLife();
-
-
     }
     else{
         alert('you cant access,as your score is above 10 ');
