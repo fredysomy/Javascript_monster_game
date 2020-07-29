@@ -62,6 +62,7 @@ function bonu() {
     if (curentUserHealth<=10 && bonuslife == true ){
         increasePlayerHealth(20);
         removeBonusLife();
+        curentUserHealth+=20;
     }
     else{
         alert('you cant access,as your score is above 10 ');
