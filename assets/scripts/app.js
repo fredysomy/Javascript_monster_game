@@ -19,10 +19,11 @@ function healit() {
     curentUserHealth -=x;
     if (curentUserHealth+healvalue>=maxLife) {
         alert("you cant heal more")
-        increasePlayerHealth(maxLife-curentUserHealth);
+       
     }
     else{
         increasePlayerHealth(healvalue);
+         curentUserHealth+=healvalue;
         healBtn.disabled=true;
     }
 }
