@@ -23,7 +23,7 @@ function healit() {
     }
     else{
         increasePlayerHealth(healvalue);
-         curentUserHealth+=healvalue;
+        
         healBtn.disabled=true;
     }
 }
